@@ -85,8 +85,8 @@ st.subheader("2. 고장 및 에러 로그 (Symptom & Error Log)")
 symptom_desc = st.text_area(
     "■ 고장 설명",
     value=(
-        "스캔 진행 중 특정 축 구동 시 이음 발생 후 Interlock 스톱. S/W"
-        " 재부팅 후에도 동일 에러 재발."
+        " "
+        "  ."
     ),
     key="symptom_desc",
 )
@@ -156,11 +156,12 @@ st.subheader("5. 해결 절차 (Step-by-Step SOP)")
 sop_steps = st.text_area(
     "해결 절차 (한 줄에 1단계씩 입력)",
     value=(
-        "1. 안전 조치 및 전원 차단: 장비 Main Breaker 차단 및 LOTO 체결\n2."
-        " 컨트롤러 점검: Controller Rear Panel 개폐 후 AMP 보드 상태 확인\n3."
-        " 파트 교체: 손상된 Drive AMP Board 신규 파트로 교체 진행\n4. Zero"
-        " Point Calibration: S/W 내 Drive Parameter Reload 후 참조점 재설정\n5."
-        " 시운전: 10회 연속 Repeatability Test 수행 완료"
+        " "
+        " "
+        " "
+        " "
+        " "
+       
     ),
     key="sop_steps",
 )
@@ -172,8 +173,10 @@ with part_col1:
     part_info = st.text_area(
         "교체 파트 정보 (부품명 / P/N / 수량 / 비고)",
         value=(
-            "X-Drive Amplifier Board | SE0700356 | 1 EA | 창원 사무실 재고\nSignal"
-            " Cable (X-Axis) | SE0300344 | 1 EA | 예비용 재배선"
+            " "
+            " "
+            " "
+            " "
         ),
         key="part_info",
     )
@@ -181,9 +184,9 @@ with part_col2:
     field_tip = st.text_area(
         "💡 엔지니어 팁 & 재발 방지책",
         value=(
-            "- Board 교체 전 반드시 Cable 접지 상태를 먼저 확인할 것 (가짜"
-            " 과전류 에러 방지).\n- 정기 점검 시 X축 케이블 베어 내부 마모"
-            " 여부 필수 체크."
+           " "
+           " "
+           " "
         ),
         key="field_tip",
     )
