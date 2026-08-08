@@ -5,12 +5,12 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Equipment Troubleshooting Guide Generator",
+    page_title="Equipment Troubleshooting",
     page_icon="🔧",
     layout="wide",
 )
 
-st.title("🔧 Equipment Troubleshooting Guide Generator App")
+st.title("🔧 Equipment Troubleshooting")
 st.markdown(
     "현장에서 입력한 데이터와 사진을 바탕으로 **표준화된 [FIELD SERVICE] 가이드북 문서**를"
     " 자동 생성하고 **PDF/인쇄 및 파일 저장**합니다."
